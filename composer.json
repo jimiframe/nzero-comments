@@ -25,6 +25,7 @@
         "drupal/core-recommended": "10.1.1",
         "drupal/critical_css": "^1.19",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/devel": "^5.2",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/formdazzle": "^3.0",
         "drupal/monolog": "3.0.0",
@@ -34,6 +35,7 @@
         "drupal/restui": "^1.21",
         "drupal/search_api": "^1.29",
         "drupal/twig_tweak": "^3.2",
+        "drupal/webprofiler": "^10.1",
         "drush/drush": "^11.3",
         "symfony/stopwatch": "^6.1"
     },

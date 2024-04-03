@@ -1,6 +1,6 @@
 uuid: 1cf0c099-fa56-41cf-97c1-a63e5266141a
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:banner:c15f2fe1-f5ab-4ff9-b6a7-9c9933d4d895'
@@ -11,7 +11,7 @@ dependencies:
     - alps_trips
 id: alps_trips_iceclimber
 theme: alps_trips
-region: sidebar
+region: sidebar_first
 weight: -4
 provider: null
 plugin: 'block_content:c15f2fe1-f5ab-4ff9-b6a7-9c9933d4d895'

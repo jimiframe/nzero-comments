@@ -1,6 +1,6 @@
 uuid: 9d69d213-d34a-4af2-b44b-faaf79bf5c00
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - alps_quote
@@ -9,7 +9,7 @@ dependencies:
     - alps_trips
 id: quote
 theme: alps_trips
-region: sidebar
+region: sidebar_first
 weight: -7
 provider: null
 plugin: alps_quote_block
