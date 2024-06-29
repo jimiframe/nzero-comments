@@ -1,0 +1,4 @@
+name: Cookbook Module
+type: module
+description: This is example module Development Cookbook!
+core_version_requirement: '>=10'

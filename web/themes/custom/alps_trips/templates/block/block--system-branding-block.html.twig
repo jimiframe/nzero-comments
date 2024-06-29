@@ -14,17 +14,12 @@
  */
 #}
 {% block content %}
-  {% if site_logo %}
-    <a href="{{ path('<front>') }}" rel="home" class="site-logo">
-      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
-    </a>
-  {% endif %}
-  {% if site_name %}
-    <div class="site-name">
-      <a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
-    </div>
-  {% endif %}
-  {% if site_slogan %}
-    <div class="site-slogan">{{ site_slogan }}</div>
-  {% endif %}
+  {{ dump(attributes) }}
+  {{
+  include('@atoms/logo.html.twig',
+    {
+      'url': site_logo,
+      'alt': site_name,
+    })
+  }}
 {% endblock %}

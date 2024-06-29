@@ -33,6 +33,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/restui": "^1.21",
+        "drupal/schema_metatag": "^3.0",
         "drupal/search_api": "^1.29",
         "drupal/twig_tweak": "^3.2",
         "drupal/webprofiler": "^10.1",

@@ -19,3 +19,17 @@ function alps_trips_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function alps_trips_theme_suggestions_region_alter(array &$suggestions, array $variables): void {
+  if (!empty($variables['elements']['#region'])) {
+
+    // Add a suggestion if we are on the front page.
+    if (Drupal::service('path.matcher')->isFrontPage()) {
+      $suggestions[] =
+        'region__' . $variables['elements']['#region'] . '__front';
+    }
+  }
+}
