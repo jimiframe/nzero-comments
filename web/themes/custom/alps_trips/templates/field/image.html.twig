@@ -10,9 +10,6 @@
  * @see template_preprocess_image()
  */
 #}
-{%
-set classes = [
-  style_name ? 'image-style-' ~ style_name|clean_class,
-]
-%}
-<img{{ attributes.addClass(classes) }} />
+{{ include('@atoms/picture.html.twig', {
+  'attributes': attributes,
+}) }}

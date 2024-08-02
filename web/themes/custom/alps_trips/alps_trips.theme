@@ -90,3 +90,15 @@ function alps_trips_theme_suggestions_block_alter(array &$suggestions, array $va
     $suggestions[] = 'block__type_' . $block_bundle;
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function alps_trips_theme(): array {
+  return [
+    'form_user_login_form' => [
+      'render element' => 'form',
+      'template' => 'form/form-user-login-form',
+    ],
+  ];
+}

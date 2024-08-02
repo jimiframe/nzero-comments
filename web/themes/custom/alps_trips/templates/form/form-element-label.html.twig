@@ -12,14 +12,7 @@
  * @see template_preprocess_form_element_label()
  */
 #}
-{%
-  set classes = [
-    title_display == 'after' ? 'option',
-    title_display == 'invisible' ? 'visually-hidden',
-    required ? 'js-form-required',
-    required ? 'form-required',
-  ]
-%}
-{% if title is not empty or required -%}
-  <label{{ attributes.addClass(classes) }}>{{ title }}</label>
-{%- endif %}
+{{ include('@atoms/label.html.twig', {
+  attributes: attributes,
+  title: title,
+}) }}
