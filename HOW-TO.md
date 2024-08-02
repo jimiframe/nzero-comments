@@ -8,6 +8,10 @@
 The site will be available at https://nzero.ddev.site and Storybook will be
 available at https://nzero.ddev.site:6006.
 
+## Import DB
+* `ddev import-db --src=data/init.sql.gz`
+
+
 ## Developing
 
 When developing, you can use the following commands:
