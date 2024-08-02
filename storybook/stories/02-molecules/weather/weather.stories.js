@@ -8,7 +8,7 @@ export default {
     title: 'Broken Clouds',
     temp: '6.61 °C',
     dialogUrl:
-      'https://packt.ddev.site/weather/Provincia%20di%20Alessandria/2023-02-05%2015%3A00%3A00',
+      'https://nzero.ddev.site/weather/Provincia%20di%20Alessandria/2023-02-05%2015%3A00%3A00',
     infoLabel: 'More info',
     dialog: true,
   },
