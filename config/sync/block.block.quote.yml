@@ -9,7 +9,7 @@ dependencies:
     - alps_trips
 id: quote
 theme: alps_trips
-region: sidebar_first
+region: header
 weight: -7
 provider: null
 plugin: alps_quote_block

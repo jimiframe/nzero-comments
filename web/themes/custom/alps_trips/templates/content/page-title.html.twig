@@ -13,7 +13,7 @@
  */
 #}
 {{ title_prefix }}
-{% if title %}
-  <h1{{ title_attributes.addClass('page-title') }}>{{ title }}</h1>
-{% endif %}
+{{ include('@atoms/title.html.twig', {
+  'title': title,
+}) }}
 {{ title_suffix }}

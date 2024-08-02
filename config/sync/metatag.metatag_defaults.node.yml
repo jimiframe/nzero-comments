@@ -1,0 +1,15 @@
+uuid: 3616c1f5-878c-4d57-8312-401e6540bdcd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  schema_course_name: 'Test course test'
+  schema_course_offers: 'a:4:{s:5:"@type";s:5:"Offer";s:8:"category";s:4:"Paid";s:13:"priceCurrency";s:3:"EUR";s:5:"price";s:20:"[current-page:title]";}'
+  schema_course_type: Course
+  title: '[node:title] | [site:name]'

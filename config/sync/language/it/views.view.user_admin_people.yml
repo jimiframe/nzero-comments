@@ -21,6 +21,8 @@ display:
           label: 'Iscritto da'
         access:
           label: 'Ultimo accesso'
+          settings:
+            past_format: '@interval fa'
         operations:
           label: Operazioni
         mail:

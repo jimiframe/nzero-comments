@@ -2,6 +2,7 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   alps_base: 0
+  alps_cookbook: 0
   alps_demo: 0
   alps_quote: 0
   alps_weather: 0
@@ -12,6 +13,7 @@ module:
   breakpoint: 0
   ckeditor5: 0
   cl_generator: 0
+  comment: 0
   components: 0
   config: 0
   consumers: 0
@@ -42,6 +44,7 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   monolog: 0
   mysql: 0
   next: 0
@@ -55,6 +58,16 @@ module:
   responsive_image: 0
   rest: 0
   restui: 0
+  schema_article: 0
+  schema_article_example: 0
+  schema_course: 0
+  schema_event: 0
+  schema_metatag: 0
+  schema_organization: 0
+  schema_person: 0
+  schema_place: 0
+  schema_product: 0
+  schema_service: 0
   sdc: 0
   search_api: 0
   search_api_db: 0

@@ -1,0 +1,25 @@
+uuid: 3bb19c7b-d7e4-46be-9e1a-d6bf8bcd25b9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:d11f7876-8bbe-4d63-bee5-b84cf0293833'
+  module:
+    - block_content
+  theme:
+    - alps_trips
+id: alps_trips_banner
+theme: alps_trips
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:d11f7876-8bbe-4d63-bee5-b84cf0293833'
+settings:
+  id: 'block_content:d11f7876-8bbe-4d63-bee5-b84cf0293833'
+  label: Banner
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
