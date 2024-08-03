@@ -1,7 +1,14 @@
-(function(Drupal) {
+// eslint-disable-next-line func-names
+((Drupal, once) => {
   Drupal.behaviors.at_button = {
-    attach: function attach(context) {
-      console.log('Replace me with the real JS behavior');
+    attach(context) {
+      once('at-button', '.at-button', context).forEach((item) => {
+        // eslint-disable-next-line func-names
+        item.addEventListener('click', (event) => {
+          event.preventDefault();
+          alert('Hello World!');
+        });
+      });
     },
   };
-})(Drupal);
+})(Drupal, once);

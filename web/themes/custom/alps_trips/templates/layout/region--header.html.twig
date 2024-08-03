@@ -4,3 +4,10 @@ include('@organisms/header.html.twig',
     'blocks': content
   })
 }}
+
+{{
+include('alps_trips:at-button',
+  {'title': 'More info', 'type': 'primary'},
+  with_context = false
+)
+}}

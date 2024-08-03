@@ -8,6 +8,9 @@ libraryOverrides:
     - "core/once"
 props:
   type: object
+  required:
+    - title
+    - type
   properties:
     "title":
       type: "string"
