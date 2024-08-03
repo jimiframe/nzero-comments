@@ -126,15 +126,15 @@ class CommentsBlock extends BlockBase implements ContainerFactoryPluginInterface
         $query = $this->database->select('comment__comment_body', 'ccb')
           ->fields('ccb', ['comment_body_value'])
           ->condition('entity_id', $cid->cid);
-        $commentBody = array_keys( $query->execute()->fetchAllAssoc('comment_body_value') );
-        $comments = $commentBody ?? [];
+        $commentBody = $query->execute()->fetchAllAssoc('comment_body_value');
+        $comments = array_merge($comments, array_keys($commentBody));
       }
 
     }
 
     $total_words = 0;
-    foreach ($comments as $commet) {
-      $total_words += str_word_count(strip_tags($commet));
+    foreach ($comments as $comment) {
+      $total_words += str_word_count(strip_tags($comment));
     }
 
     return $total_words;
