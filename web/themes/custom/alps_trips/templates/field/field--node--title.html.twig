@@ -28,15 +28,15 @@
 {% if not is_inline %}
   {% include "field.html.twig" %}
 {% else %}
-{%
-  set classes = [
+  {%
+    set classes = [
     'field',
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
   ]
-%}
-<span{{ attributes.addClass(classes) }}>
+  %}
+  <span{{ attributes.addClass(classes) }}>
   {%- for item in items -%}
     {{ item.content }}
   {%- endfor -%}
