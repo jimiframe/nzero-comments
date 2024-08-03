@@ -1,0 +1,16 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: "At Picture"
+status: "stable"
+description: "Alps Trip Picture"
+props:
+  type: object
+  properties:
+    src:
+      type: string
+      title: Image source
+      description: The source of the image.
+      examples:
+        - 'https://www.example.org/image.jpg'
+    picture_attributes:
+      type: Drupal\Core\Template\Attribute
+      name: Attributes

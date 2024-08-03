@@ -37,24 +37,10 @@
  * @see template_preprocess_field()
  */
 #}
- {% set title_classes = [
-   'field__label',
-   label_display == 'visually_hidden' ? 'visually-hidden',
- ] %}
+{% set value %}
+  {{ items.0.content }}
+{% endset %}
 
-{% if label_hidden %}
-  {% if multiple %}
-    {% for item in items %}
-      {{ item.content }}
-    {% endfor %}
-  {% else %}
-    {% for item in items %}
-      {{ item.content }}
-    {% endfor %}
-  {% endif %}
-{% else %}
-  <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-  {% for item in items %}
-    {{ item.content }}
-  {% endfor %}
-{% endif %}
+{{ include('@atoms/body.html.twig', {
+  'body': value,
+}) }}

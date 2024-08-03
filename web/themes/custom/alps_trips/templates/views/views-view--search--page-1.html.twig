@@ -30,28 +30,4 @@
  * @see template_preprocess_views_view()
  */
 #}
-{%
-  set classes = [
-    'view',
-    'view-' ~ id|clean_class,
-    'view-id-' ~ id,
-    'view-display-id-' ~ display_id,
-    dom_id ? 'js-view-dom-id-' ~ dom_id,
-  ]
-%}
-{{ include('@organisms/view.html.twig', {
-  'attributes': attributes,
-  'titlePrefix': title_prefix,
-  'title': title,
-  'titleSuffix': title_suffix,
-  'header': header,
-  'exposed': exposed,
-  'attachmentBefore': attachment_before,
-  'rows': rows,
-  'empty': empty,
-  'pager': pager,
-  'attachmentAfter': attachment_after,
-  'more': more,
-  'footer': footer,
-  'feedIcons': feed_icons,
-}) }}
+{% extends "views-view--trips.html.twig" %}
