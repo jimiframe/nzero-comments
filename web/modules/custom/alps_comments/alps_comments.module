@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function alps_comments_help($route_name) {
+  switch ($route_name) {
+    case 'help.page.alps_weather':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Comments module provides comments information.') . '</p>';
+
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function alps_comments_theme(): array {
+  return [
+    'alps_comments_block' => [
+      'variables' => [
+        'total_comments' => 0,
+        'last_comments' => [],
+        'total_words' => 0,
+      ],
+    ],
+  ];
+}

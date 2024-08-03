@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * A Twig template for displaying user comments.
+ *
+ * Available variables:
+ * - total_comments: The total number of comments.
+ * - last_comments: A list of the latest 5 comments. Each comment is an object with the following properties:
+ * - node_title: The title of the node on which the comment was made.
+ *  - subject: The subject of the comment.
+ *  - created: The date when the comment was created.
+ * - total_words: Total of words in all comments.
+ *
+ */
+#}
+
+<div class="comments-block">
+  <h2>{{ 'Total Comments: @total_comments'|t({'@total_comments': total_comments}) }}</h2>
+
+  <h3>{{ 'Last Comments'|t }}</h3>
+  <ul>
+    {% for comment in last_comments %}
+      <li>
+        <strong>{{ comment.node_title }}</strong>: {{ comment.subject }} <br>
+        <small>{{ comment.created }}</small>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h3>{{  'Total Words: @total_words'|t({'@total_words': total_words})  }}</h3>
+</div>

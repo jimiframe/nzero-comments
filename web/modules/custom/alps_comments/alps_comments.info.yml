@@ -1,0 +1,9 @@
+name: Alps Trip Comments
+type: module
+description: Provides Custom Block Comments
+package: Custom
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - drupal:comment
+  - drupal:node
+
