@@ -1,0 +1,28 @@
+uuid: b814df08-834d-4f0f-a6f5-bb4ed846df1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - alps_comments
+    - user
+  theme:
+    - alps_trips
+id: alps_trips_alpstripcommentsblock
+theme: alps_trips
+region: sidebar
+weight: 0
+provider: null
+plugin: comments_block
+settings:
+  id: comments_block
+  label: 'Alps Trip Comments Block'
+  label_display: '0'
+  provider: alps_comments
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
