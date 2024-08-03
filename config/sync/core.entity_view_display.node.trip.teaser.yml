@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.trip.body
+    - field.field.node.trip.field_comment
     - field.field.node.trip.field_destination
     - field.field.node.trip.field_duration
     - field.field.node.trip.field_lat_lng
@@ -54,6 +55,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_comment: true
   field_destination: true
   field_lat_lng: true
   field_origin: true

@@ -1,0 +1,33 @@
+exclude_paths: ''
+intercept_redirects: false
+purge_on_cache_clear: false
+active_toolbar_items:
+  request: request
+  theme: theme
+  views: views
+  ajax: '0'
+  assets: '0'
+  blocks: '0'
+  cache: '0'
+  configs: '0'
+  database: '0'
+  devel: '0'
+  events: '0'
+  extensions: '0'
+  forms: '0'
+  frontend: '0'
+  http: '0'
+  logs: '0'
+  mail: '0'
+  memory: '0'
+  routing: '0'
+  services: '0'
+  state: '0'
+  time: '0'
+  translations: '0'
+  user: '0'
+query_sort: null
+query_highlight: null
+ide: 'txmt://open?url=file://%f&line=%l'
+ide_remote_path: ''
+ide_local_path: ''

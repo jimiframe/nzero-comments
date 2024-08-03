@@ -1,16 +1,17 @@
-uuid: 182d0365-a5b3-4e24-80d6-abad43502c58
+uuid: 4a1a952d-3679-40a7-af90-f3c950ee939a
 langcode: en
 status: true
 dependencies:
   config:
-    - comment.type.manager_comment
+    - comment.type.trip_comment
     - field.storage.comment.comment_body
+    - filter.format.plain_text
   module:
     - text
-id: comment.manager_comment.comment_body
+id: comment.trip_comment.comment_body
 field_name: comment_body
 entity_type: comment
-bundle: manager_comment
+bundle: trip_comment
 label: Comment
 description: ''
 required: true
@@ -18,5 +19,6 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  allowed_formats: {  }
+  allowed_formats:
+    - plain_text
 field_type: text_long

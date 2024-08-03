@@ -1,8 +1,0 @@
-uuid: e20d12fe-c641-4312-b514-0aa2c1ed7b58
-langcode: en
-status: true
-dependencies: {  }
-id: manager_comment
-label: 'Manager Comments'
-target_entity_type_id: block_content
-description: ''

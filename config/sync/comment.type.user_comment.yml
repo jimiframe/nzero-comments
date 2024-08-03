@@ -1,8 +1,0 @@
-uuid: 03e6770b-f541-420c-9c41-b3ebd9d7e886
-langcode: en
-status: true
-dependencies: {  }
-id: user_comment
-label: 'User Comment'
-target_entity_type_id: block_content
-description: ''

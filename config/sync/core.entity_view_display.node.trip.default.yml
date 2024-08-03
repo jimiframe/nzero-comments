@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.trip_comment.default
     - field.field.node.trip.body
+    - field.field.node.trip.field_comment
     - field.field.node.trip.field_destination
     - field.field.node.trip.field_duration
     - field.field.node.trip.field_lat_lng
@@ -13,6 +15,7 @@ dependencies:
     - node.type.trip
   module:
     - alps_base
+    - comment
     - text
     - user
 id: node.trip.default
@@ -26,6 +29,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_destination:
     type: string

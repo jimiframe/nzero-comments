@@ -1,0 +1,8 @@
+uuid: dc389a32-6e61-4ece-b9e3-52065b8a1b8c
+langcode: en
+status: true
+dependencies: {  }
+id: trip_comment
+label: 'Trip Comment'
+target_entity_type_id: node
+description: ''

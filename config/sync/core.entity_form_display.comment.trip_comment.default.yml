@@ -1,15 +1,15 @@
-uuid: 5c6440e5-a81b-41c4-9dc8-ca77c35e3630
+uuid: 212e21f1-fd83-4a8a-865d-60980f6040a6
 langcode: en
 status: true
 dependencies:
   config:
-    - comment.type.manager_comment
-    - field.field.comment.manager_comment.comment_body
+    - comment.type.trip_comment
+    - field.field.comment.trip_comment.comment_body
   module:
     - text
-id: comment.manager_comment.default
+id: comment.trip_comment.default
 targetEntityType: comment
-bundle: manager_comment
+bundle: trip_comment
 mode: default
 content:
   author:

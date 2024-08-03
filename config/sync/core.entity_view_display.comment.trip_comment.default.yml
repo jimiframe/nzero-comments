@@ -1,21 +1,22 @@
-uuid: 5bb880cc-f7d9-4842-9137-97c87b96c781
+uuid: e7dc9798-00fc-4fd3-b507-5b20279c3f7d
 langcode: en
 status: true
 dependencies:
   config:
-    - comment.type.user_comment
-    - field.field.comment.user_comment.comment_body
+    - comment.type.trip_comment
+    - field.field.comment.trip_comment.comment_body
   module:
     - text
-id: comment.user_comment.default
+id: comment.trip_comment.default
 targetEntityType: comment
-bundle: user_comment
+bundle: trip_comment
 mode: default
 content:
   comment_body:
-    type: text_default
+    type: text_trimmed
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 250
     third_party_settings: {  }
     weight: 0
     region: content
