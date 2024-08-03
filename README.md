@@ -4,3 +4,4 @@ commands.
 
 ## Doc SDC
 * http://json-schema.org/draft-04/schema
+* `ddev drush generate theme:sdc:component`
