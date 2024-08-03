@@ -15,17 +15,27 @@
 #}
 
 <div class="comments-block">
-  <h2>{{ 'Total Comments: @total_comments'|t({'@total_comments': total_comments}) }}</h2>
+  <h3><span style="font-family: 'Segoe UI Symbol';">💬️</span> {{ 'Total Comments: @total_comments'|t({'@total_comments': total_comments}) }}</h3>
+  <h3><span style="font-family: 'Segoe UI Symbol';">🔤️</span> {{  'Total Words: @total_words'|t({'@total_words': total_words})  }}</h3>
 
-  <h3>{{ 'Last Comments'|t }}</h3>
-  <ul>
-    {% for comment in last_comments %}
-      <li>
-        <strong>{{ comment.node_title }}</strong>: {{ comment.subject }} <br>
-        <small>{{ comment.created }}</small>
-      </li>
-    {% endfor %}
-  </ul>
+  <section style="border-top: 2px solid indigo; padding: 1em 0 2em;">
+    <h3 class="text-2xl">{{ 'Last Comments'|t }}</h3>
+    <ul>
+      {% for comment in last_comments %}
+        <li>
+          {% embed 'alps_trips:at-card' with {
+            'title': comment.node_title,
+            'description': comment.subject
+          } %}
+            {% block bottom %}
+              <small>{{ comment.created }}</small>
+            {% endblock %}
+          {% endembed %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 
-  <h3>{{  'Total Words: @total_words'|t({'@total_words': total_words})  }}</h3>
+
+
 </div>
